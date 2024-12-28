@@ -3,17 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "description": "Discord example app",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
-  "engines": {
-    "node": ">=18.x"
-  },
   "scripts": {
     "start": "node index.js",
     "register": "node commands.js",
     "dev": "nodemon app.js"
   },
-  "author": "Shay DeWael",
+  "author": "Rohit Tyagi",
   "license": "MIT",
   "dependencies": {
     "discord-interactions": "^4.0.0",
