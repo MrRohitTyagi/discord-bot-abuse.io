@@ -15,6 +15,13 @@ if (!process.env.PUBLIC_KEY) {
   console.error("Error: PUBLIC_KEY is not defined in environment variables.");
   process.exit(1);
 }
+app.get("/", async (req, res) => {
+  try {
+    res.send("Hello World!");
+  } catch (error) {
+    console.log("error", error);
+  }
+});
 
 app.post(
   "/interactions",
